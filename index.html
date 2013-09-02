@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="中文 Garden : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>中文 Garden</title>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/html5shiv.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/respond.min.js"></script>
+    <![endif]-->
     <style>
-    #main_content {
+    body {
       background-image: url('images/20130827_130629.jpg');
-      background-size: 700px;
-      min-height: 1000px;
-      padding-top: 240px;
-      text-align: center;
+      background-position-x: 500px;
     }
-    #main_content img {
-      max-width: 500px;
-    }
-    #main_content_wrap {
-      /* background: #1C7410; */
-      background: #FAC620;
-    }
-    #header_wrap {
-      position: absolute;
-      top: 40px;
-      /* background: #81F0FF; */
-      background: #FFF1C7;
+    .main-content {
+      background: #007edf;
+      box-shadow: 0 0 10px rgba(0,0,0,.5);
       z-index: 10;
+      padding: 10px;
+      width: 500px;
+      color:white;
     }
-    #project_title {
-      border: 0;
-      box-shadow: initial;
-      width: 400px;
+    #icon {
+      max-width: 120px;
     }
-    #header_wrap .inner {
-      padding: 0px;
+    .main-content img {
+      max-width: 100%;
     }
     </style>
   </head>
-
   <body>
+    <div class="main-content">
+      <img src="images/garden.PNG"></img>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/zhongwengarden">View on GitHub</a>
+      <p>Memorize Chinese words and phrases by planting them your own virtual garden.
+Over time your seeds will grow into beautiful character-flowers and word-bouquets.
+Once they bloom you can sell them by passing a quiz.</p>
+      <ul>
+        <li>Over N characters and phrases to unlock.</li>
+        <li>Challenges where you can unlock hidden rewards.</li>
+        <li>Players can choose between Traditional and Simplified characters.</li>
+        <li>Pinyin and meaning quizes.</li>
+        <li>A Variety of seed categories.</li>
+      </ul>
 
-          <img id="project_title" src="images/title.png"></img>
-          <h2 id="project_tagline"></h2>
-
-        </header>
+    
+    <h3 style="font-weight:bold;text-align:center;">
+    <img id="icon" src="images/icon.png"></img><br />
+    Download
+    </h3>
+    <div class="footer">
+      <p>&copy; Nathan Breit 2013</p>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <img src="images/garden.PNG"></img>
-      </section>
     </div>
-
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>
