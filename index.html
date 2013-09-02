@@ -12,50 +12,81 @@
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/respond.min.js"></script>
     <![endif]-->
     <style>
-    body {
-      background-image: url('images/20130827_130629.jpg');
-      background-position-x: 500px;
+    .flowers {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: absolute;
     }
     .main-content {
       background: #007edf;
       box-shadow: 0 0 10px rgba(0,0,0,.5);
       z-index: 10;
       padding: 10px;
-      width: 500px;
+      width: 600px;
       color:white;
+      font-weight: bold;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      overflow-y: auto;
     }
     #icon {
       max-width: 120px;
+      margin: 10px;
     }
     .main-content img {
       max-width: 100%;
+    }
+    @media (max-width: 600px) {
+      .flowers {
+        display: none;
+      }
+      .main-content {
+        width: 100%;
+      }
+    }
+    @media (min-width: 1600px) {
+      .main-content {
+        right: 1000px;
+      }
     }
     </style>
   </head>
   <body>
     <div class="main-content">
-      <img src="images/garden.PNG"></img>
+      <img src="images/title.png"></img>
 
       <p>Memorize Chinese words and phrases by planting them your own virtual garden.
 Over time your seeds will grow into beautiful character-flowers and word-bouquets.
 Once they bloom you can sell them by passing a quiz.</p>
       <ul>
-        <li>Over N characters and phrases to unlock.</li>
-        <li>Challenges where you can unlock hidden rewards.</li>
-        <li>Players can choose between Traditional and Simplified characters.</li>
-        <li>Pinyin and meaning quizes.</li>
-        <li>A Variety of seed categories.</li>
+        <li>Over N characters and phrases to unlock</li>
+        <li>Challenges where you can unlock hidden rewards</li>
+        <li>Players can choose between Traditional and Simplified characters</li>
+        <li>Quizes on character meanings and pinyin representations</li>
       </ul>
-
     
-    <h3 style="font-weight:bold;text-align:center;">
-    <img id="icon" src="images/icon.png"></img><br />
-    Download
-    </h3>
-    <div class="footer">
-      <p>&copy; Nathan Breit 2013</p>
+      <center><img id="icon" src="images/icon.png"></img></center>
+      <div class="panel panel-default" style="margin:10px;">
+        <div class="panel-body">
+          <h3><a href="test">Download for Android</a></h3>
+          <h3><a href="test">Download for iOS</a></h3>
+        </div>
+      </div>
+      
+      <hr />
+      
+      <div class="footer">
+        <p>&copy; Nathan Breit 2013</p>
+      </div>
     </div>
+    <div class="flowers">
+      <img src="images/20130827_130629.jpg"></img>
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
