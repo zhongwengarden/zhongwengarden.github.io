@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <meta charset="utf-8">
+    <title>中文 Garden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A game for learning Chinese characters" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
@@ -12,13 +14,16 @@
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/respond.min.js"></script>
     <![endif]-->
     <style>
+    body {
+      background: rgb(105, 194, 105);
+    }
     .flowers {
       top: 0;
       bottom: 0;
       right: 0;
-      overflow-y: auto;
+      overflow-y: hidden;
       overflow-x: hidden;
-      position: absolute;
+      position: fixed;
     }
     .main-content {
       background: #007edf;
@@ -28,17 +33,32 @@
       width: 600px;
       color:white;
       font-weight: bold;
-      top: 0;
-      bottom: 0;
       position: absolute;
-      overflow-y: auto;
     }
     #icon {
       max-width: 120px;
       margin: 10px;
     }
     .main-content img {
-      max-width: 100%;
+      max-width: 90%;
+    }
+    .main-content p {
+      margin-bottom: 20px;
+    }
+    .panel-body h3 {
+      margin-top: 10px;
+    }
+    .my-header {
+      margin: -10px;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: rgb(129, 210, 255);
+      color: black;
+      text-align: center;
+    }
+    .screen-shot {
+      width: 200px;
+      margin: 20px;
     }
     @media (max-width: 600px) {
       .flowers {
@@ -57,23 +77,52 @@
   </head>
   <body>
     <div class="main-content">
-      <img src="images/title.png"></img>
+      <div class="my-header">
+        <img src="images/title.png"></img>
+      </div>
 
-      <p>Memorize Chinese words and phrases by planting them your own virtual garden.
-Over time your seeds will grow into beautiful character-flowers and word-bouquets.
+      <p>中文 Garden is a game based on memorizing Chinese words and phrases.
+You plant characters in a virtual garden and over time they will grow into beautiful flowers and bouquets.
 Once they bloom you can sell them by passing a quiz.</p>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+        <img id="icon" src="images/icon.png" style="float:left;"></img>
+          <h3><a href="test">Download for Android</a></h3>
+          <h3><a href="test">Download for iOS</a></h3>
+        </div>
+      </div>
+      
+      <h3>Features</h3>
+
       <ul>
         <li>Over N characters and phrases to unlock</li>
         <li>Challenges where you can unlock hidden rewards</li>
         <li>Players can choose between Traditional and Simplified characters</li>
         <li>Quizes on character meanings and pinyin representations</li>
       </ul>
-    
-      <center><img id="icon" src="images/icon.png"></img></center>
-      <div class="panel panel-default" style="margin:10px;">
+      
+      <center><a href="images/garden.PNG"><img class="screen-shot" src="images/garden.PNG"></img></a></center>
+
+      <h3>Contact</h3>
+
+      <p>If you find a bug, have a feature request or just want to chat you can email me at ...</p>
+
+      <h3>Sharing</h3>
+      <style type="text/css" media="screen">
+        #custom-tweet-button a {
+          display: block;
+          width: 80px;
+          padding: 2px 5px 2px 20px;
+          background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+          border: 1px solid #ccc;
+        }
+      </style>
+      <div class="panel panel-default">
         <div class="panel-body">
-          <h3><a href="test">Download for Android</a></h3>
-          <h3><a href="test">Download for iOS</a></h3>
+          <div id="custom-tweet-button">
+            <a href="https://twitter.com/share?url=http://zhongwengarden.com" target="_blank">Tweet</a>
+          </div>
         </div>
       </div>
       
@@ -91,5 +140,7 @@ Once they bloom you can sell them by passing a quiz.</p>
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+    
   </body>
 </html>
