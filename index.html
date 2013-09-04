@@ -31,17 +31,18 @@
       background-image: url("images/20130827_130629.jpg");
       width: 1000px;
     }
-    .main-content {
-      background: #007edf;
-      box-shadow: 0 0 10px rgba(0,0,0,.5);
+    .main-content-wrap {
       z-index: 10;
+      position: absolute;
+      top:0;bottom:0;left:0;
+    }
+    .main-content {
+      box-shadow: 0 0 10px rgba(0,0,0,.5);
+      background: #007edf;
       padding: 10px;
       width: 600px;
       color:white;
       font-weight: bold;
-      position: absolute;
-      top:0;bottom:0;
-      min-height: 1240px;
     }
     #icon {
       max-width: 120px;
@@ -79,6 +80,7 @@
     @media (min-width: 1600px) {
       .main-content {
         right: 1000px;
+        left: initial;
       }
     }
     .download {
@@ -90,7 +92,7 @@
     </style>
   </head>
   <body>
-    <div class="main-content">
+    <div class="main-content-wrap"><div class="main-content">
       <div class="my-header">
         <img src="images/title.png"></img>
       </div>
@@ -104,7 +106,7 @@ Once they bloom you can sell them by passing a quiz.</p>
           <img id="icon" src="images/icon.png" style="float:left;"></img>
           <h3><a href="test">Download for Android</a></h3>
           <h3><a href="test">Download for iOS</a></h3>
-          <h4>Coming soon... <a href="https://build.phonegap.com/apps/315287/install">Download beta here</a></h4>
+          <h4 style="clear:both;">Coming soon... <a href="https://build.phonegap.com/apps/315287/install">Download beta here</a></h4>
         </div>
       </div>
       
@@ -366,6 +368,7 @@ http://github.com/necolas/css3-facebook-buttons
       <div id="custom-tweet-button">
         <a href="https://twitter.com/share?url=http://zhongwengarden.com" target="_blank">Tweet</a>
       </div>
+      
       <a class="uibutton large confirm" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://zhongwengarden.com">Share on Facebook</a>
       
       <a target="_blank" href="https://plus.google.com/share?url=http://zhongwengarden.com"><img
@@ -376,7 +379,8 @@ http://github.com/necolas/css3-facebook-buttons
       <div class="footer">
         <p>&copy; Nathan Breit 2013</p>
       </div>
-    </div>
+    </div></div>
+    
     <div class="flowers">
     </div>
 
