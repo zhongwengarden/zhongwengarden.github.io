@@ -8,87 +8,19 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="stylesheets/mystyles.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/html5shiv.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/assets/js/respond.min.js"></script>
     <![endif]-->
     
-    <meta property="og:image" content="http://zhongwengarden.com/images/icon.png"/>
+    <meta property="og:image" content="zhongwengarden.com/images/icon.png"/>
     <meta name="twitter:card" content="app">
-    <meta name="twitter:image" content="http://zhongwengarden.com/images/icon.png">
-
-    
+    <meta name="twitter:image" content="zhongwengarden.com/images/icon.png">
     
     <style>
-    body {
-      background: rgb(105, 194, 105);
-    }
-    .flowers {
-      position: fixed;
-      bottom: 0;top: 0;
-      right: 0;
-      background-image: url("images/20130827_130629.jpg");
-      width: 1000px;
-    }
-    .main-content-wrap {
-      z-index: 10;
-      position: absolute;
-      top:0;bottom:0;left:0;
-    }
-    .main-content {
-      box-shadow: 0 0 10px rgba(0,0,0,.5);
-      background: #007edf;
-      padding: 10px;
-      width: 600px;
-      color:white;
-      font-weight: bold;
-    }
-    #icon {
-      max-width: 120px;
-      margin: 10px;
-    }
-    .my-header img {
-      max-width: 320px;
-    }
-    .main-content p {
-      margin-bottom: 20px;
-    }
-    .panel-body h3 {
-      margin-top: 10px;
-    }
-    .my-header {
-      margin: -10px;
-      margin-bottom: 20px;
-      padding: 5px 0;
-      background-color: rgb(129, 210, 255);
-      color: black;
-      text-align: center;
-    }
-    .screen-shot {
-      margin: 20px;
-      min-height: 380px;
-    }
-    @media (max-width: 600px) {
-      .flowers {
-        display: none;
-      }
-      .main-content {
-        width: 100%;
-      }
-    }
-    @media (min-width: 1600px) {
-      .main-content-wrap {
-        right: 1000px;
-        left: initial;
-      }
-    }
-    .download {
-      color: black;
-    }
-    .download > h3 > a {
-      color: gray;
-    }
+
     </style>
   </head>
   <body>
@@ -103,9 +35,9 @@ Once they bloom you can sell them by passing a quiz.</p>
 
       <div class="panel panel-default">
         <div class="panel-body download">
-          <img id="icon" src="images/icon.png" style="float:left;"></img>
-          <h3><a href="test">Download for Android</a></h3>
-          <h3><a href="test">Download for iOS</a></h3>
+          <img id="app-icon" src="images/icon.png"></img>
+          <h3><a href="">Download for Android</a></h3>
+          <h3><a href="">Download for iOS</a></h3>
           <h4 style="clear:both;">Coming soon... <a href="https://build.phonegap.com/apps/315287/install">Download beta here</a></h4>
         </div>
       </div>
@@ -113,266 +45,29 @@ Once they bloom you can sell them by passing a quiz.</p>
       <h3>Features</h3>
 
       <ul>
-        <li>Over N characters and phrases to unlock</li>
-        <li>Challenges where you can unlock hidden rewards</li>
+        <li>Over 200 characters and phrases to unlock</li>
         <li>Players can choose between Traditional and Simplified characters</li>
-        <li>Quizes on character meanings and pinyin representations</li>
+        <li>Quizes on character meanings and pīnyīn representations</li>
+        <li>Earn additional prizes by completing a variety of challenges</li>
       </ul>
       
-      <center><a href="images/garden.PNG"><img class="screen-shot" src="http://images.weserv.nl/?url=zhongwengarden.com/images/garden.PNG&h=380"></img></a></center>
+      <center><a href="images/garden.PNG"><img class="screen-shot" src="images/garden.PNG"></img></a></center>
 
       <h3>Contact</h3>
 
-      <p>Send questions and comments to feedback@zhongwengarden.com</p>
+      <p>Send questions and comments to <a href="mailto:feedback@zhongwengarden.com">feedback@zhongwengarden.com</a></p>
 
       <h3>Share</h3>
-      <style type="text/css" media="screen">
-        #custom-tweet-button a {
-          width: 80px;
-          line-height: 30px;
-          padding: 0px 5px 0px 22px;
-          background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
-        }
-        #custom-tweet-button {
-          display: inline-block;
-          border: 1px solid #ccc;
-          background-color: #fff;
-        }
-/* ------------------------------------------
-CSS3 FACEBOOK-STYLE BUTTONS (Nicolas Gallagher)
-MIT License
-http://github.com/necolas/css3-facebook-buttons
------------------------------------------- */
-
-
-/* ------------------------------------------------------------------------------------------------------------- BUTTON */
-
-.uibutton,
-.uibutton:visited {
-    position: relative;
-    z-index: 1;
-    overflow: visible;
-    display: inline-block;
-    padding: 0.3em 0.6em 0.375em;
-    border: 1px solid #999;
-    border-bottom-color: #888;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-    font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
-    white-space: nowrap;
-    cursor: pointer;
-    /* outline: none; */
-    color: #333;
-    background-color: #eee;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f6f6), to(#e4e4e3));
-    background-image: -moz-linear-gradient(#f5f6f6, #e4e4e3);
-    background-image: -o-linear-gradient(#f5f6f6, #e4e4e3);
-    background-image: linear-gradient(#f5f6f6, #e4e4e3);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f6', EndColorStr='#e4e4e3'); /* for IE 6 - 9 */
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
-    /* IE hacks */
-    zoom: 1;
-    *display: inline;
-}
-
-.uibutton:hover,
-.uibutton:focus,
-.uibutton:active {
-    border-color: #777 #777 #666;
-}
-
-.uibutton:active {
-    border-color: #aaa;
-    background: #ddd;
-    filter: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-/* overrides extra padding on button elements in Firefox */
-.uibutton::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-/* ............................................................................................................. Icons */
-
-.uibutton.icon:before {
-    content: "";
-    position: relative;
-    top: 1px;
-    float:left;
-    width: 10px;
-    height: 12px;
-    margin: 0 0.5em 0 0;
-    background: url(fb-icons.png) 99px 99px no-repeat;
-}
-
-.uibutton.edit:before  { background-position: 0 0; }
-.uibutton.add:before  { background-position: -10px 0; }
-.uibutton.secure:before  { background-position: -20px 0; }
-.uibutton.prev:before  { background-position: -30px 0; }
-.uibutton.next:before  { float:right; margin: 0 -0.25em 0 0.5em; background-position: -40px 0; }
-
-/* ------------------------------------------------------------------------------------------------------------- BUTTON EXTENSIONS */
-
-/* ............................................................................................................. Large */
-
-.uibutton.large {
-    font-size: 13px;
-}
-
-/* ............................................................................................................. Submit, etc */
-
-.uibutton.confirm {
-    border-color: #29447e #29447e #1a356e;
-    color: #fff;
-    background-color: #5B74A8;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
-    background-image: -moz-linear-gradient(#637bad, #5872a7);
-    background-image: -o-linear-gradient(#637bad, #5872a7);
-    background-image: linear-gradient(#637bad, #5872a7);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#637bad', EndColorStr='#5872a7'); /* for IE 6 - 9 */
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
-}
-
-.uibutton.confirm:active {
-    border-color: #29447E;
-    background: #4F6AA3;
-    filter: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-/* ............................................................................................................. Special */
-
-.uibutton.special {
-    border-color: #3b6e22 #3b6e22 #2c5115;
-    color: #fff;
-    background-color: #69a74e;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75ae5c), to(#67a54b));
-    background-image: -moz-linear-gradient(#75ae5c, #67a54b);
-    background-image: -o-linear-gradient(#75ae5c, #67a54b);
-    background-image: linear-gradient(#75ae5c, #67a54b);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#75ae5c', EndColorStr='#67a54b'); /* for IE 6 - 9 */
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
-}
-
-.uibutton.special:active {
-    border-color: #3b6e22;
-    background: #609946;
-    filter: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-/* ............................................................................................................. Disable */
-
-.uibutton.disable {
-    z-index: 0;
-    border-color: #c8c8c8;
-    color: #b8b8b8;
-    background: #f2f2f2;
-    cursor: default;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-.uibutton.confirm.disable {
-    color: #fff;
-    border-color: #94a2bf;
-    background: #adbad4;
-}
-
-.uibutton.special.disable {
-    color: #fff;
-    border-color: #9db791;
-    background: #b4d3a7;
-}
-
-.uibutton.disable.icon:before,
-.uibutton.disable.icon:after {
-    opacity: 0.5;
-}
-
-/* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
-
-.uibutton-group {
-    display: inline-block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    /* IE hacks */
-    zoom: 1;
-    *display: inline;
-}
-
-.uibutton + .uibutton,
-.uibutton + .uibutton-group,
-.uibutton-group + .uibutton,
-.uibutton-group + .uibutton-group {
-    margin-left: 3px;
-}
-
-.uibutton-group li {
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
-.uibutton-group .uibutton {
-    float: left;
-    margin-left: -1px;
-}
-
-.uibutton-group .uibutton:hover,
-.uibutton-group .uibutton:focus,
-.uibutton-group .uibutton:active {
-    z-index:2;
-}
-
-.uibutton-group > .uibutton:first-child,
-.uibutton-group li:first-child .uibutton {
-    margin-left: 0;
-}
-
-/* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
-/* For mixing buttons and button groups, e.g., in a navigation bar */
-
-.uibutton-toolbar {
-    padding: 6px;
-    border-top: 1px solid #ccc;
-    background: #f2f2f2;
-}
-
-.uibutton-toolbar .uibutton,
-.uibutton-toolbar .uibutton-group {
-    vertical-align: bottom;
-}
-.uibutton.large.confirm {
-  line-height: 20px;
-}
-      </style>
       
-      <div id="custom-tweet-button">
-        <a href="https://twitter.com/share?url=http://zhongwengarden.com" target="_blank">Tweet</a>
+      <div class="share">
+        <a id="custom-tweet-button" href="https://twitter.com/share?url=http://zhongwengarden.com" target="_blank">Tweet</a>
+        
+        <a class="uibutton large confirm" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://zhongwengarden.com">Facebook</a>
+        
+        <a target="_blank" href="https://plus.google.com/share?url=http://zhongwengarden.com">
+          <img src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/>
+        </a>
       </div>
-      
-      <a class="uibutton large confirm" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://zhongwengarden.com">Share on Facebook</a>
-      
-      <a target="_blank" href="https://plus.google.com/share?url=http://zhongwengarden.com"><img
-  src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/></a>
       
       <hr />
 
@@ -381,8 +76,7 @@ http://github.com/necolas/css3-facebook-buttons
       </div>
     </div></div>
     
-    <div class="flowers">
-    </div>
+    <div class="flowers"></div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
