@@ -4,6 +4,7 @@ body {
 p, h1, h2, h3, h4, li {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
 .flowers {
   display: none;
   position: fixed;
@@ -19,11 +20,31 @@ p, h1, h2, h3, h4, li {
   position: absolute;
   top:0;bottom:0;left:0;
 }
+
+@media (max-width: 600px) {
+  .flowers {
+    /* try to save bandwidth */
+    background-image: none;
+  }
+}
+@media (min-width: 600px) {
+  .flowers {
+    display: block;
+  }
+}
+@media (min-width: 1600px) {
+  .main-content-wrap {
+    right: 1000px;
+    left: auto;
+  }
+}
+
 .main-content {
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   background: #007edf;
   padding: 10px;
   max-width: 600px;
+  min-height: 100%;
   color:white;
   font-weight: bold;
 }
@@ -48,21 +69,7 @@ p, h1, h2, h3, h4, li {
   margin: 20px;
   height: 380px;
 }
-@media (max-width: 600px) {
-  .main-content {
-  }
-}
-@media (min-width: 600px) {
-  .flowers {
-    display: block;
-  }
-}
-@media (min-width: 1600px) {
-  .main-content-wrap {
-    right: 1000px;
-    left: initial;
-  }
-}
+
 .download {
   color: black;
 }
@@ -75,6 +82,7 @@ p, h1, h2, h3, h4, li {
   max-width: 120px;
   margin: 10px;
 }
+
 .share-button {
   margin-right: 5px;
   display: inline-block;
@@ -98,7 +106,8 @@ p, h1, h2, h3, h4, li {
   font-size: 14px;
   background-color: #5B74A8;
   font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
-} 
-.main-content > a, .main-content > p > a, .footer a {
+}
+
+.main-content > a, .main-content p > a, .footer a {
   color: white;
 }
