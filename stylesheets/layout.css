@@ -1,0 +1,39 @@
+.big-image {
+  display: none;
+  position: fixed;
+  /* This tries to fix the image not being ready when the chrome nav is hidden on mobile devices */
+  bottom: -150px;
+  top: -100px;
+  right: 0;
+  width: 1000px;
+}
+.main-content-wrap {
+  z-index: 10;
+  position: absolute;
+  top:0;bottom:0;left:0;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .big-image {
+    /* try to save bandwidth */
+    background-image: none;
+  }
+}
+@media (min-width: 600px) {
+  .big-image {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .main-content-wrap {
+    right: 600px;
+    left: auto;
+    width: 600px;
+  }
+}
+.main-content {
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  padding: 10px;
+  max-width: 600px;
+  min-height: 100%;
+}

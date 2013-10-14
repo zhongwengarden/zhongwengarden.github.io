@@ -4,49 +4,13 @@ body {
 p, h1, h2, h3, h4, li {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
-.flowers {
-  display: none;
-  position: fixed;
-  /* This tries to fix the image not being ready when the chrome nav is hidden on mobile devices */
-  bottom: -150px;
-  top: -100px;
-  right: 0;
-  background-image: url("../images/20130827_130629.jpg");
-  width: 1000px;
-}
-.main-content-wrap {
-  z-index: 10;
-  position: absolute;
-  top:0;bottom:0;left:0;
-}
-
-@media (max-width: 600px) {
-  .flowers {
-    /* try to save bandwidth */
-    background-image: none;
-  }
-}
-@media (min-width: 600px) {
-  .flowers {
-    display: block;
-  }
-}
-@media (min-width: 1600px) {
-  .main-content-wrap {
-    right: 1000px;
-    left: auto;
-  }
-}
-
 .main-content {
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
   background: #007edf;
-  padding: 10px;
-  max-width: 600px;
-  min-height: 100%;
   color:white;
   font-weight: bold;
+}
+.big-image {
+  background-image: url("../images/20130827_130629.jpg");
 }
 .my-header img {
   max-width: 320px;
@@ -65,6 +29,7 @@ p, h1, h2, h3, h4, li {
   color: black;
   text-align: center;
 }
+
 .screen-shot {
   margin: 20px;
   height: 380px;
@@ -110,4 +75,8 @@ p, h1, h2, h3, h4, li {
 
 .main-content > a, .main-content p > a, .footer a {
   color: white;
+  text-decoration: underline;
+}
+.main-content > a:hover, .main-content p > a:hover, .footer a:hover { 
+  color: pink;
 }
