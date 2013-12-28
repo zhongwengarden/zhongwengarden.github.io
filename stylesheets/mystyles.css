@@ -1,6 +1,14 @@
 body {
   background: rgb(105, 194, 105);
 }
+::selection
+{
+background-color:pink;
+}
+::-moz-selection
+{
+background-color:pink;
+}
 p, h1, h2, h3, h4, li {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -38,7 +46,7 @@ p, h1, h2, h3, h4, li {
 .download {
   color: black;
 }
-.download > h3 > a {
+.dead-link {
   color: gray;
 }
 #app-icon {
@@ -60,9 +68,10 @@ p, h1, h2, h3, h4, li {
 }
 #twitter-button {
   font-size: 14px;
-  padding: 6px 9px;
+  padding: 4px 7px;
   font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
   background-color: #fff;
+  border: 1px solid #ccc;
 }
 #facebook-button {
   color: white;
@@ -72,7 +81,14 @@ p, h1, h2, h3, h4, li {
   background-color: #5B74A8;
   font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
 }
-
+#google-button {
+  background-color: #d64937;
+  border: 1px solid #a02f21;
+  font-size: 14px;
+  padding: 4px 7px;
+  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  color: white;
+}
 .main-content > a, .main-content p > a, .footer a {
   color: white;
   text-decoration: underline;
