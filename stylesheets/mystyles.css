@@ -57,36 +57,28 @@ p, h1, h2, h3, h4, li {
 }
 
 .share-button {
-  margin-right: 5px;
-  display: inline-block;
-  height: 32px;
-  vertical-align: top;
-}
-.share-button, .share-button > img {
+  margin-top: 5px;
   margin-right: 5px;
   border-radius: 4px;
-}
-#twitter-button {
+  display: inline-block;
+  vertical-align: top;
+  width: 88px;
+  text-align: center;
+  border: 1px solid #ccf;
   font-size: 14px;
   padding: 4px 7px;
-  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+#twitter-button {
   background-color: #fff;
-  border: 1px solid #ccc;
 }
 #facebook-button {
-  color: white;
   border: 1px solid #2D5085;
-  padding: 5px 7px;
-  font-size: 14px;
   background-color: #5B74A8;
-  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  color: white;
 }
 #google-button {
   background-color: #d64937;
   border: 1px solid #a02f21;
-  font-size: 14px;
-  padding: 4px 7px;
-  font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
   color: white;
 }
 .main-content > a, .main-content p > a, .footer a {
