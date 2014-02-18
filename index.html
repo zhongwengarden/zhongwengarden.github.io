@@ -37,8 +37,14 @@ Once they bloom you can sell them by passing a quiz.</p>
       <div class="panel panel-default">
         <div class="panel-body download">
           <img id="app-icon" src="images/icon.png"></img>
-          <h3><a href="https://play.google.com/store/apps/details?id=com.nathanathan.garden">Download Android Version</a></h3>
-          <h3><a href="https://itunes.apple.com/us/app/zhong-wen-garden/id817315441?ls=1&mt=8">Download iOS Version</a></h3>
+          <h3><a
+            href="https://play.google.com/store/apps/details?id=com.nathanathan.garden"
+            onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=com.nathanathan.garden'); return false;">
+            Download Android Version</a></h3>
+          <h3><a
+            href="https://itunes.apple.com/us/app/zhong-wen-garden/id817315441?ls=1&mt=8"
+            onclick="trackOutboundLink('https://itunes.apple.com/us/app/zhong-wen-garden/id817315441?ls=1&mt=8'); return false;">
+            Download iOS Version</a></h3>
         </div>
       </div>
       
@@ -103,7 +109,13 @@ Once they bloom you can sell them by passing a quiz.</p>
   
     ga('create', 'UA-37075552-2', 'zhongwengarden.com');
     ga('send', 'pageview');
-  
+    var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+        function () {
+          document.location = url;
+        }
+      });
+    };
   </script>
     
   </body>
